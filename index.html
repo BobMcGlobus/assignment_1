@@ -23,7 +23,7 @@ Released   : 20140330
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
-<body onload="typer(); openBanner()" >
+<body onload="typer(); openBanner(); load()" >
 <div id="header-wrapper">
 	<div id="header" class="container">
 		<div id="logo">
@@ -84,9 +84,15 @@ Released   : 20140330
 <div id="copyright" class="container">
 	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 </div>
-<div id="cookieBanner"><button onclick="setInitCookie()"> Allow</button> </div>
+<button id='dark' onclick="dark()"> dark</button><button id="light" onclick="light()"> light</button>
+<div id="cookieBanner">
+	Yo Boi, wir benutzen Cookies, hoffe das geht klar...
+	<button onclick="setInitCookie('yep')"> OK</button>
+	<button onclick="setInitCookie('nope')"> Nö</button>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
 <script language="javascript" type="text/javascript" src="js/cookiewums.js"></script>
 <script language="javascript" type="text/javascript" src="js/typer.js"></script>
+<script language="javascript" type="text/javascript" src="js/darkmode.js"></script>
 </body>
 </html>

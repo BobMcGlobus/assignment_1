@@ -5,8 +5,10 @@ function openBanner() {
     }
 }
 
-function setInitCookie() {
-    Cookies.set('initCookie', 'allow');
+function setInitCookie(ok) {
+    if (ok ==='yep') {
+        Cookies.set('initCookie', 'allow');
+    }
     document.getElementById("cookieBanner").style.display = "none";
 }
 
