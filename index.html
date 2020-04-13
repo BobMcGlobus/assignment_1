@@ -23,7 +23,7 @@ Released   : 20140330
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
-<body onload="typer(); openBanner(); load()" >
+<body onload=" load(); setTimeout(openBanner, 100); setTimeout(corona, 3000);" >
 <div id="header-wrapper">
 	<div id="header" class="container">
 		<div id="logo">
@@ -41,8 +41,8 @@ Released   : 20140330
 	</div>
 	<div id="banner" class="container">
 		<div class="title">
-			<h2>Consectetuer adipiscing elit</h2>
-			<span  id="typing" class="byline">L</span>
+			<h2 class="billo">Consectetuer adipiscing elit</h2>
+			<span  id="typing" class="byline"> </span><br>
 		</div>
 		<ul class="actions">
 			<li><a href="#" class="button">Pulvinar mollis</a></li>
@@ -50,7 +50,7 @@ Released   : 20140330
 	</div>
 </div>
 <div id="wrapper">
-	<div id="three-column" class="container">
+	<div id="three-column" class="container animText">
 		<div class="title">
 			<h2>Feugiat lorem ipsum dolor sed veroeros</h2>
 			<span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span>
@@ -84,15 +84,42 @@ Released   : 20140330
 <div id="copyright" class="container">
 	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 </div>
-<button id='dark' onclick="dark()"> dark</button><button id="light" onclick="light()"> light</button>
+<button id='dark' onclick="dark()">🌛</button><button id="light" onclick="light()">🌞</button>
 <div id="cookieBanner">
 	Yo Boi, wir benutzen Cookies, hoffe das geht klar...
 	<button onclick="setInitCookie('yep')"> OK</button>
 	<button onclick="setInitCookie('nope')"> Nö</button>
 </div>
+
+<!-- transparent fullscreen background -->
+<div class="my-popup-background-layer" id="coronaPopup">
+
+	<!-- master popup div container -->
+	<div class="my-popup-container mlctr-popup">
+
+		<a class="mlctr-close" onclick="coronacolse()"></a>
+		<!-- following onsubmit event is required -->
+		<div id="MailocatorForm"><div class="mlctr-image"></div>
+			<!-- following div will be overwritten with success message -->
+			<div class="mlctr-message-success" style="display:block">
+				<h2>Warnung wegen</h2>
+				<h1>Corona</h1>
+				<h2>können wir momentan nicht liefern</h2>
+				<p>dnvjkhfghfghhrg ghrgrigr grgrhguhrgr grhgrghur grh grghrgurhgrg rgrhghrhg rgr girhgrg rg rhghroughr ghr gurhguhrgrg</p>
+
+
+			</div>
+			<!-- following div will replace the "mlctr-message-success" div --
+		</form>
+
+	</div><!--/end of my-popup-container -->
+
+</div><!--/end of my-popup-background-layer -->
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
 <script language="javascript" type="text/javascript" src="js/cookiewums.js"></script>
 <script language="javascript" type="text/javascript" src="js/typer.js"></script>
 <script language="javascript" type="text/javascript" src="js/darkmode.js"></script>
+		<script language="javascript" type="text/javascript" src="js/corona.js"></script>
+		<script language="javascript" type="text/javascript" src="js/textAnim.js"></script>
 </body>
 </html>

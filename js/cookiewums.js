@@ -2,6 +2,8 @@ function openBanner() {
     var isCookie = Cookies.get('initCookie');
     if (isCookie) {
         document.getElementById("cookieBanner").style.display = "none";
+    }else {
+        document.getElementById("cookieBanner").style.display = "block";
     }
 }
 
